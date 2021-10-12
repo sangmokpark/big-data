@@ -9,6 +9,6 @@ df_avg = pd.read_csv('c:/big-data/carbon 20210900.csv', encoding = 'cp949', inde
 df_my_index = pd.read_csv('c:/big-data/df_avg.csv', index_col=0, encoding = 'cp949', thousands = ',')
 
 
-df_my_index.plot(kind='bar', color=('b', 'r', 'g'))
+df_my_index.plot(kind='bar', color=('b', 'r'))
 df_avg.plot(kind='bar', color=('g'))
 plt.show()
