@@ -2,11 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import font_manager, rc
 from sklearn import linear_model
+
 Carbon_Prediction = linear_model.LinearRegression()
 
-
-x = [[2019], [2020], [2021]]
-y = [[66.12],[54.71],[60.37]]
+x = [[1990], [2000], [2017], [2015], [2016], [2017], [2018], [2050]]
+y = [[696.5],	[612.9], [519.7],	[472.0],	[458.7],
+    [455.7],	[402], [0]]
 Carbon_Prediction.fit(x,y)
 
 plt.scatter(x, y, color='black')
