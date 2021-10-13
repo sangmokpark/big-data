@@ -4,8 +4,6 @@ from matplotlib import font_manager, rc
 from sklearn import linear_model
 Carbon_Prediction = linear_model.LinearRegression()
 
-x = [[2019], [2020], [2021]]
-y = []
 
 font_path = "C:/Windows/Fonts/NGULIM.TTF"
 font = font_manager.FontProperties(fname=font_path).get_name()
